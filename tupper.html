@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8" />
+</head>
+
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>k + 17</th>
+        <th rowspan="2"><canvas id="tupperCanvas" width="106" height="17"></canvas></th>
+      </tr>
+      <tr>
+        <td>k</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>0</td>
+        <td>106</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <button id="clearButton">Clear</button>
+  <button id="undoButton">Undo</button>
+  <button id="copyKButton">Copy</button>
+  <button id="invertButton">Invert</button>
+  <br>
+  <label for="kTextarea">k = </label>
+  <textarea id="kTextarea" onchange="getPlotFromK()"></textarea>
+  <!-- <label for="brushSizeInpt">Brush Size:</label>
+  <input value='1' id="brushSizeInpt"></input> -->
+  <script src="BigInt.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
